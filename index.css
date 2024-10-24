@@ -1,0 +1,1039 @@
+body {
+    margin: 0;
+}
+
+/* navbar */
+
+#navimage {
+    width: 30%;
+    position: absolute;
+    top: 15px;
+    left: 520px;
+
+}
+
+
+
+.navbar_font {
+    font-size: 25px;
+    margin-top: 41px;
+
+    font-weight: 600;
+    padding-left: 15px;
+}
+
+.navbar_font a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar_font a:hover {
+    color: #eaaa5c;
+}
+
+a.active {
+    color: #eaaa5c;
+}
+
+.navbar_left {
+    position: absolute;
+    left: 1250px;
+    top: 41px;
+    word-spacing: 10px;
+}
+
+.logIn button {
+    background-color: #ded9d3;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid #1f1e1e9f;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    transition-duration: 1s;
+}
+
+.logIn button:hover {
+    background-color: #b6a997;
+}
+
+.signUp button {
+    background-color: #ded9d3;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid #1f1e1e9f;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    transition-duration: 1s;
+
+}
+
+.signUp button:hover {
+    background-color: rgb(182, 169, 151);
+}
+
+#search {
+    padding: 5px;
+    background-color: #ded9d3;
+    border: 1px solid #1f1e1e9f;
+    border-radius: 15px;
+    position: absolute;
+    left: 510px;
+    top: 145px;
+    width: 500px;
+    height: 35px;
+    transition-duration: 1s;
+}
+
+#search:hover {
+    background-color: rgb(182, 169, 151);
+}
+
+.hr1 {
+    margin-top: 130px;
+    border: 10px solid #efa361;
+}
+
+/* navbar ends here */
+
+
+/* image container */
+
+.image_container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    /*space between boxes*/
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-right: 50px;
+    margin-bottom: 40px;
+
+}
+
+.image_link {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    /*hover text is positioned to relative text*/
+}
+
+.image_link img {
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    /*ensure the image is scaled to fit the container*/
+}
+
+.image_link .hover_text {
+    position: absolute;
+    /*will be removed from the normal document flow*/
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 250px;
+    background-color: #d8bd95ee;
+    color: black;
+    padding: 5px;
+    /*add padding around the image*/
+    border: 1px solid #e3be9c;
+    border-radius: 10px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.image_link:hover .hover_text {
+    opacity: 1;
+}
+
+.image_link:hover img {
+    opacity: 0;
+}
+
+.hr2 {
+    border: 1px solid #dddddcfb;
+}
+
+.split_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* announcements box */
+
+.announcements {
+    width: 800px;
+    border-right: 1px solid #ccc;
+    margin-left: 50px;
+    text-align: center;
+    padding-right: 80px;
+}
+
+.announcements_box {
+    width: 800px;
+    border: 8px solid #efa361;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    /*add space between boxes*/
+    padding: 5px;
+    /*add padding inside the box*/
+    background-color: #f9e6c9;
+
+}
+
+.announcements_box h3 {
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+.announcements_box p {
+    font-size: 17px;
+    color: #000000c7;
+}
+
+.announcements_box a {
+    text-decoration: none;
+    color: black;
+    font-weight: 100;
+    font-style: italic;
+}
+
+/* side bar boxes */
+
+.side_bar {
+    width: 438px;
+    padding: 10px;
+    margin-left: 50px;
+
+}
+
+.hr4 {
+    width: 100px;
+    border: 2px solid #efa361;
+    margin-left: 0px;
+}
+
+.top_translators .ol1 {
+    font-size: 17px;
+}
+
+.support_us {
+    font-size: 17px;
+}
+
+.kofiLogo11 {
+    width: 250px;
+    margin-left: 90px;
+
+}
+
+.kofiLogo11:hover {
+    transform: scale(1.2);
+    /*increase size by 20%*/
+    transition: transform 0.5s;
+    /*smooth transition*/
+}
+
+
+
+
+.discord {
+    font-size: 17px;
+}
+
+.discord_img {
+    width: 50%;
+    margin-left: 90px;
+}
+
+.discord_img:hover {
+    transform: scale(1.2);
+    /*increase size by 20%*/
+    transition: transform 0.5s;
+    /*smooth transition*/
+}
+
+/* footer */
+
+.footer {
+    position: relative;
+    clear: both;
+    background-color: #e3be9c;
+    height: 200px;
+    width: 100%;
+
+}
+
+.disclaimer {
+    font-size: 17px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+
+.footer_links {
+    text-align: center;
+    color: black;
+}
+
+.footer_links a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.copyright {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+    color: black;
+}
+
+.hr3 {
+    width: 50%;
+    align-items: center;
+    border: 1px solid rgb(211, 145, 45);
+}
+
+/* footer ends here */
+
+/* ///////////////////////////////////////// */
+
+/* genres page */
+/* ****css for genres page starts here***** */
+
+.genres {
+    font-size: 18px;
+    font-weight: bold;
+    width: 1118px;
+    height: 40px;
+    word-spacing: 30px;
+    padding-left: 400px;
+    background-color: #ded9d3;
+    margin-top: -8px;
+    padding-top: 14px;
+}
+
+.genres a {
+    text-decoration: none;
+    color: #727272;
+}
+
+.genres a:hover {
+    color: black;
+}
+
+a.active2 {
+    color: black;
+    text-decoration: underline;
+}
+
+.image_link2 {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    /*hover text is positioned to relative text*/
+}
+
+.image_link2 img {
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    /*ensure the image is scaled to fit the container*/
+}
+
+.image_link2 .hover_text {
+    position: absolute;
+    /*will be removed from the normal document flow*/
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    /*the direction of flexbox;vertically,without-> side by side*/
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 250px;
+    background-color: #d8bd95ee;
+    color: black;
+    padding: 5px;
+    /*add padding around the image*/
+    border: 1px solid #e3be9c;
+    border-radius: 10px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.image_link2:hover .hover_text {
+    opacity: 1;
+}
+
+.image_link2:hover img {
+    opacity: 0;
+}
+
+
+/* novel page */
+/* novel page */
+/* novel page */
+/* novel page */
+/* novel page intro */
+
+.novel_Page_Split {
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px solid #c8a280;
+    padding: 0;
+}
+
+.novel_image_left {
+    width: 545px;
+    height: 604px;
+    background-color: #e4c08b;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 80px;
+    font-weight: 700;
+    font-style: italic;
+
+
+}
+
+
+.novel_img {
+    height: 603px;
+    width: 444px;
+    margin: 0;
+    display: block;
+
+}
+
+.novel_image_right {
+    width: 520px;
+    background-color: #282828;
+    color: white;
+    text-align: center;
+}
+
+
+.novel_image_right .content {
+    margin-top: 45px;
+    font-size: 20px;
+    color: white;
+}
+
+.novel_image_right .content a {
+    color: white;
+    text-decoration: none;
+}
+
+.novel_image_right .content a:hover {
+    color: #e4c08b;
+}
+
+/* novel description */
+
+.description {
+    text-align: center;
+    align-items: center;
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+.description a{
+    text-decoration: none;
+    color: black;
+}
+
+.description p {
+    font-size: 19px;
+}
+
+/* novel chapters */
+
+.chapter_split {
+
+    margin: 10px;
+    padding: 10px;
+}
+
+.chapter_buttons {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.bookmark_button,
+.read_first_button,
+.read_latest_button {
+    background-color: #e4c08b;
+    border: 2px solid #c28958;
+    color: #0f0e0e;
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 1s;
+
+}
+
+.bookmark_button:hover,
+.read_first_button:hover,
+.read_latest_button:hover {
+    background-color: #c28958;
+}
+
+.chapter_buttons a {
+    text-decoration: none;
+    color: black;
+}
+
+.chapter_select1 {
+    width: 300px;
+    font-size: 16px;
+    border: 2px solid #010101;
+    background-color: #ccc;
+    border-radius: 10px;
+    height: 30px;
+    text-align: center;
+    margin: 20px;
+    margin-left: 120px;
+}
+
+.volume {
+    font-weight: bold;
+}
+
+.chapter_select2 {
+    width: 300px;
+    font-size: 16px;
+    border: 2px solid #010101;
+    background-color: #ccc;
+    border-radius: 10px;
+    height: 30px;
+    text-align: center;
+    margin: 20px;
+    margin-left: 150px;
+}
+
+.chapter_select3 {
+    width: 300px;
+    font-size: 16px;
+    border: 2px solid #010101;
+    background-color: #ccc;
+    border-radius: 10px;
+    height: 30px;
+    text-align: center;
+    margin: 20px;
+    margin-left: 140px;
+}
+
+/* last split */
+.last_split {
+    margin: 10px;
+    padding: 10px;
+
+}
+
+/* comment section */
+
+.comment_section {
+    width: 60%;
+    height: 100%;
+    float: left;
+    border-right: 1px solid #ccc;
+    padding-right: 60px;
+
+}
+
+/* translator's section */
+
+.comment_section p {
+    font-size: 19px;
+
+}
+
+.trans_name {
+    font-size: 19px;
+    float: right;
+    margin-top: 50px;
+
+}
+
+.trans_img {
+
+    margin-top: -30px;
+    margin-right: -120px;
+    width: 80px;
+
+    float: right;
+
+
+}
+
+.kofiLogo {
+    width: 300px;
+    margin-left: 300px;
+    border-radius: 20px;
+}
+
+.kofiLogo:hover {
+    transform: scale(1.2);
+    /*increase size by 20%*/
+    transition: transform 0.5s;
+    /*smooth transition*/
+}
+
+/* comment section */
+
+.addComment {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+
+}
+
+#comment {
+    width: 95%;
+    border-radius: 10px;
+    border: 2px solid #141414;
+    background-color: #ebe9e9;
+    margin-left: 20px;
+}
+
+.comment_button {
+    width: 15%;
+    height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid #c8a280;
+    background-color: #e4c08b;
+    float: right;
+    margin-right: 15px;
+    transition-duration: 1s;
+    margin-top: 10px;
+}
+
+.comment_button:hover {
+    background-color: #c28958;
+}
+
+/* You may also like section */
+
+.support {
+    width: 30%;
+    float: right;
+    margin-right: 30px;
+}
+
+.support p {
+    font-size: 19px;
+}
+
+.Logo {
+    width: 150px;
+    margin-left: 150px;
+    border-radius: 10px;
+    margin-top: 0;
+}
+
+.Logo:hover {
+    transform: scale(1.2);
+    /*increase size by 20%*/
+    transition: transform 0.5s;
+    /*smooth transition*/
+}
+
+
+/* .aboutUs */
+
+.aboutUs {
+    padding: 30px;
+    background-image: url(images/background.png);
+    margin-top: -10px;
+    color: #eee8e8;
+}
+
+.aboutUsHr {
+    width: 100px;
+    border: 3px solid #efa361;
+    border-radius: 6px;
+    margin-left: 0 auto;
+    margin-top: -15px;
+
+}
+
+/* Join Us Page */
+
+.joinUs {
+    padding-left: 50px;
+    padding-right: 40px;
+}
+
+.para1 {
+    padding-left: 50px;
+    color: #010101;
+}
+
+.collapsible {
+    cursor: pointer;
+}
+
+.collapsible input[type="checkbox"] {
+    display: none;
+}
+
+.collapsible label {
+    display: block;
+    padding: 10px;
+    background-color: #e5b184;
+    border-bottom: 1px solid #a97411;
+    border-radius: 8px;
+    width: 800px;
+    height: 30px;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 19px;
+
+}
+
+.collapsible .content {
+  
+    display: none;
+    padding: 10px;
+    background-color: wheat;
+    border: 2px solid #eac57f;
+    border-radius: 8px;
+    width: 800px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.collapsible label:hover {
+    background-color: #f1c39f;
+}
+
+.collapsible input[type="checkbox"]:checked~.content {
+    display: block;
+}
+
+.joinUs_content {
+    display: none;
+    padding: 10px;
+    background-color: wheat;
+    border: 2px solid #eac57f;
+    border-radius: 8px;
+    width: 800px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.content a {
+    text-decoration: none;
+    color: #6e5933;
+}
+
+/* feedback page */
+
+.feedback {
+    padding: 30px;
+    background-image: url(images/feedback-background.jpg);
+    margin-top: -10px;
+    color: #3c3a3a;
+}
+
+.request-field {
+    margin-left: 400px;
+}
+
+#issue {
+    width: 700px;
+    height: 35px;
+    background-color: #8f8f8e;
+    border-radius: 10px;
+    border: 2px solid #666665;
+    color: #010101;
+    font-size: 15px;
+}
+
+#email {
+    width: 700px;
+    height: 35px;
+    background-color: #8f8f8e;
+    border-radius: 10px;
+    border: 2px solid #666665;
+    color: #010101;
+    font-size: 15px;
+}
+
+#description {
+    width: 700px;
+    height: 100px;
+    background-color: #8f8f8e;
+    border-radius: 10px;
+    border: 2px solid #666665;
+    color: #010101;
+    font-size: 15px;
+}
+
+.attachment {
+    width: 700px;
+    height: 100px;
+    background-color: #8f8f8e;
+    border-radius: 10px;
+    border: 2px solid #666665;
+    color: #010101;
+    font-size: 15px;
+}
+
+.request-field button {
+    background-color: #e3be9c;
+    width: 145px;
+    height: 35px;
+    border: 2px solid #b87811;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(25, 24, 24);
+}
+
+.request-field button:hover {
+    background-color: #ad905a;
+    transition: 0.7s;
+}
+
+/* terms and condition page */
+/* policy page also have this structure */
+
+.terms {
+    margin-left: 300px;
+    margin-right: 200px;
+}
+
+.terms p {
+    font-size: 25px;
+    color: #666665;
+}
+
+.terms_hr1 {
+    width: 300px;
+    border: 2px solid #242403;
+    border-radius: 10px;
+    margin-left: 0px;
+
+}
+
+.ol_list {
+    padding-left: 15px;
+    text-align: left;
+}
+
+.ol_list>li {
+    font-weight: bold;
+    font-size: 25px;
+    color: #5d5d5c;
+}
+
+ul:nth-of-type(n+1) {
+    list-style-type: disc;
+}
+
+
+.ul li::marker {
+    color: rgb(210, 26, 26);
+}
+
+.ol_list ul li {
+    color: #666665;
+    font-size: 23px;
+}
+
+/* policy page */
+
+.policy_hr1 {
+    width: 200px;
+    border: 2px solid #242403;
+    border-radius: 10px;
+    margin-left: 0px;
+}
+
+
+/* contact us page  */
+
+.contactUs {
+    margin-left: 300px;
+    margin-right: 200px;
+}
+
+.cont_hr1 {
+    width: 150px;
+    border: 2px solid #242403;
+    border-radius: 10px;
+    margin-left: 0px;
+
+}
+
+.contactUs p {
+    font-size: 25px;
+    color: #666665;
+}
+
+
+/* same css is applied to terms,privacy pages lists */
+.ol_list {
+    padding-left: 15px;
+    text-align: left;
+}
+
+.ol_list>li {
+    font-weight: bold;
+    font-size: 25px;
+    color: #5d5d5c;
+}
+
+.ol_list p {
+    color: #666665;
+    font-size: 23px;
+    margin-bottom: -18px;
+}
+
+/* login page */
+.login_page {
+    margin-left: 350px;
+    margin-right: 200px;
+}
+
+.login_page p {
+    font-size: 25px;
+    color: #666665;
+}
+
+.email {
+    width: 500px;
+    height: 35px;
+    background-color: #8f8f8e;
+    border-radius: 10px;
+    border: 2px solid #666665;
+    color: #010101;
+    font-size: 15px;
+
+}
+
+.password {
+    width: 500px;
+    height: 35px;
+    background-color: #8f8f8e;
+    border-radius: 10px;
+    border: 2px solid #666665;
+    color: #010101;
+    font-size: 15px;
+}
+
+.login_page2 {
+    margin-left: 140px;
+    height: auto;
+
+}
+
+.login_page2 a {
+    font-size: 18px;
+    color: #545453;
+    margin-left: 188px;
+
+}
+
+.login_page2 a:hover {
+    color: #edb04d;
+    transition: 0.7s;
+}
+
+.login_page2 button {
+    background-color: #e3be9c;
+    width: 145px;
+    height: 35px;
+    border: 2px solid #b87811;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(25, 24, 24);
+    margin-left: 180px;
+}
+
+.login_page2 button:hover {
+    background-color: #bf8933;
+
+}
+
+.login_page2 .a2 {
+    font-size: 18px;
+    color: #545453;
+    margin-left: 170px;
+}
+
+/* sign up page */
+.signUp_page{
+    margin-left: 350px;
+    margin-right: 200px;
+}
+
+.signUp_page p {
+    font-size: 25px;
+    color: #666665;
+}
+
+#first_name{
+    width: 700px;
+    height: 40px;
+    background-color: #8f8f8e;
+    border-radius: 10px;
+    border: 2px solid #666665;
+    color: #010101;
+    font-size: 15px;
+
+}
+
+.signUp_page .submit{
+    width: 130px;
+    height: 30px;
+    background-color: #e3be9c;
+    border: 2px solid #b87811;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(25, 24, 24);
+   
+}
+
+.signUp_page .submit:hover{
+    background-color: #bf8933;
+}
+
+.signUp_page .agree{
+    margin-left: 30px;
+    margin-top: -20px;
+}
+
+.signUp_page .a2{
+    font-size: 18px;
+    color: #545453;
+    
+}
+
+.signUp_page .a2:hover{
+    color: #edb04d;
+    transition: 0.7s;
+}
