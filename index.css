@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 
-/* navbar */
+/* ********* Navbar CSS********** */
 
 #navimage {
     width: 30%;
@@ -12,12 +12,9 @@ body {
 
 }
 
-
-
 .navbar_font {
     font-size: 25px;
     margin-top: 41px;
-
     font-weight: 600;
     padding-left: 15px;
 }
@@ -98,16 +95,15 @@ a.active {
     align-items: center;
     display: none;
     flex-direction: column;
-    position: absolute; /* Position it absolutely */
-    top: 40px; /* Adjust this value to position below the search bar */
+    position: absolute;
+    top: 40px;
     left: 470px;
-    
-    z-index: 1000; /* Ensure it appears above other elements */
-    margin-top: 180px; /* Remove any default margin */
-    background-color: #b18b45;
+    z-index: 1000;
+    margin-top: 180px;
+    background-color: #e29858e2;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 8px;
+    padding: 4px;
     width: 550px;
     max-height: 500px;
     overflow-y: auto;
@@ -118,32 +114,32 @@ a.active {
 
 
 .result-box {
-    display: flex; /* Use flexbox to align items */
-    align-items: center; /* Center items vertically */
-    border: 1px solid #ccc; /* Light gray border */
-    border-radius: 5px; /* Rounded corners */
-    padding: 10px; /* Space inside the box */
-    margin-bottom: 10px; /* Space between boxes */
-    background-color: #f9f9f9; /* Light background color */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
-    width: 80%; /* Set a width for the result boxes */
-    max-width: 500px; /* Maximum width for the result boxes */
-    text-align: left; /* Align text to the left */
+    display: flex;
+    align-items: center;
+    border: 2px solid #d08514;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+    width: 80%;
+    max-width: 500px;
+    text-align: left;
     text-decoration: none;
-    color: #010101;
-    font-size: 23px;
+    color: #0e0e0e;
+    font-size: 25px;
 
 }
 
 .result-image {
-    width: 100px; /* Set a width for the image */
-    height: 150px; /* Set a height for the image */
-    border-radius: 5px; /* Optional: rounded corners for the image */
-    margin-right: 10px; /* Space between the image and text */
+    width: 100px;
+    height: 150px;
+    border-radius: 5px;
+    margin-right: 10px;
 }
 
 .result-box:hover {
-    background-color: #e0f7fa; /* Change background on hover */
+    background-color: #e0f7fa;
 }
 
 .hr1 {
@@ -503,7 +499,8 @@ a.active2 {
     margin-right: 20px;
 
 }
-.description a{
+
+.description a {
     text-decoration: none;
     color: black;
 }
@@ -764,7 +761,7 @@ a.active2 {
 }
 
 .collapsible .content {
-  
+
     display: none;
     padding: 10px;
     background-color: wheat;
@@ -1037,7 +1034,7 @@ ul:nth-of-type(n+1) {
 }
 
 /* sign up page */
-.signUp_page{
+.signUp_page {
     margin-left: 350px;
     margin-right: 200px;
 }
@@ -1047,7 +1044,7 @@ ul:nth-of-type(n+1) {
     color: #666665;
 }
 
-#first_name{
+#first_name {
     width: 700px;
     height: 40px;
     background-color: #8f8f8e;
@@ -1058,7 +1055,7 @@ ul:nth-of-type(n+1) {
 
 }
 
-.signUp_page .submit{
+.signUp_page .submit {
     width: 130px;
     height: 30px;
     background-color: #e3be9c;
@@ -1067,25 +1064,25 @@ ul:nth-of-type(n+1) {
     font-size: 15px;
     font-weight: bold;
     color: rgb(25, 24, 24);
-   
+
 }
 
-.signUp_page .submit:hover{
+.signUp_page .submit:hover {
     background-color: #bf8933;
 }
 
-.signUp_page .agree{
+.signUp_page .agree {
     margin-left: 30px;
     margin-top: -20px;
 }
 
-.signUp_page .a2{
+.signUp_page .a2 {
     font-size: 18px;
     color: #545453;
-    
+
 }
 
-.signUp_page .a2:hover{
+.signUp_page .a2:hover {
     color: #edb04d;
     transition: 0.7s;
 }
