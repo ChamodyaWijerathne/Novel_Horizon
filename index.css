@@ -94,6 +94,58 @@ a.active {
     background-color: rgb(182, 169, 151);
 }
 
+#resultsContainer {
+    align-items: center;
+    display: none;
+    flex-direction: column;
+    position: absolute; /* Position it absolutely */
+    top: 40px; /* Adjust this value to position below the search bar */
+    left: 470px;
+    
+    z-index: 1000; /* Ensure it appears above other elements */
+    margin-top: 180px; /* Remove any default margin */
+    background-color: #b18b45;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    width: 550px;
+    max-height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+}
+
+
+
+.result-box {
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Center items vertically */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Space inside the box */
+    margin-bottom: 10px; /* Space between boxes */
+    background-color: #f9f9f9; /* Light background color */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    width: 80%; /* Set a width for the result boxes */
+    max-width: 500px; /* Maximum width for the result boxes */
+    text-align: left; /* Align text to the left */
+    text-decoration: none;
+    color: #010101;
+    font-size: 23px;
+
+}
+
+.result-image {
+    width: 100px; /* Set a width for the image */
+    height: 150px; /* Set a height for the image */
+    border-radius: 5px; /* Optional: rounded corners for the image */
+    margin-right: 10px; /* Space between the image and text */
+}
+
+.result-box:hover {
+    background-color: #e0f7fa; /* Change background on hover */
+}
+
 .hr1 {
     margin-top: 130px;
     border: 10px solid #efa361;

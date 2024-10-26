@@ -7,7 +7,9 @@
   <link rel="icon" type="image/png" href="images/image.png" </head>
 
 <body bgcolor="#FFFFF0">
-  <!-- navbar -->
+
+  <!-- *************navbar begins here************************************* -->
+
   <div id="navbar">
     <div class="navbar_font">
       <a href="homepage.html" class="active">HOME&nbsp;&nbsp;</a>
@@ -17,7 +19,45 @@
 
     <img src="images/logo-no-background.png" id="navimage" />
 
-    <input type="search" id="search" placeholder="Search here" />
+    <!-- ****************search bar begins here******************************************* -->
+
+    <input type="search" id="search" placeholder="Search here" required />
+    <div id="resultsContainer">
+      
+    </div>
+
+    <div id="itemsContainer" style="display: none;">
+      <div class="item" data-title="Regressor Instruction Manual" data-image="images/Regressor_Instruction_Manual.webp"
+        data-link="Regressor-Instruction-manual.html">Regressor Instruction Manual</div>
+      <div class="item" data-title="Omniscient Reader's Viewpoint" data-image="images/Omniscient-Reader-s-Viewpoint.jpg" data-link="ORV.html">
+        Omniscient Reader's Viewpoint</div>
+      <div class="item" data-title="Remarried Empress" data-image="images/remarried empress.jpg"
+        data-link="remarried-empress.html">Remarried Empress</div>
+      <div class="item" data-title="Mist" data-image="images/Mist.jpg" data-link="mist.html">Mist</div>
+      <div class="item" data-title="Kill The Villainess" data-image="images/Kill-The-Villainess.jpg"
+        data-link="Kill-the-villainess.html">Kill The Villainess</div>
+
+        <div class="item" data-title="The Way To Protect The Female Lead's Older Brother" data-image="images/way to protect the.webp"
+        data-link="The-Way-To-Protect-The-female-leads-brother.html">The Way To Protect The Female Lead's Older Brother</div>
+
+        <div class="item" data-title="For My Derelict Favourite" data-image="images/for my derelict flower.jpg"
+        data-link="for-my-derelict-favourite.htmll">For My Derelict Favourite</div>
+        <div class="item" data-title="The Villainess Is A Marionette" data-image="images/the villainess is a marionette.jpg"
+        data-link="The-villainess-is-a-marionettte.html">The Villainess Is A Marionette</div>
+        <div class="item" data-title="Death Is The Only Ending For The Villainess" data-image="images/DIOEFV.jpg"
+        data-link="Death-is-the-only-ending.html">Death Is The Only Ending For The Villainess</div>
+        <div class="item" data-title="The World After The Fall" data-image="images/the world after the fall.jpg"
+        data-link="The-world-after-the-fall.htmll">The World After The Fall</div>
+        <div class="item" data-title="Solo Leveling" data-image="images/solo leveling.png"
+        data-link="solo-leveling.html">Solo Leveling</div>
+        <div class="item" data-title="Return Of The Mount Hua Sect" data-image="images/Return-Of-The-Mount-Hua-Sect.jpg"
+        data-link="return-of-mount-hua-sect.html">Return Of The Mount Hua Sect</div>
+        <div class="item" data-title="The S Classes That I Raised" data-image="images/The-SClasses-That-I-Raised.png"
+        data-link="the-s-classes-that i-raised.html">The S Classes That I Raised</div>
+        <div class="item" data-title="Lord Of Mysteries" data-image="images/Lord-of-the-Mysteries.jpeg"
+        data-link="lord-of-mysteries.html">Lord Of Mysteries</div>
+      
+    </div>
 
     <div class="navbar_left">
       <a href="login.html" class="logIn"><button>Log In</button></a>
@@ -274,7 +314,8 @@
         <h3>Picking Up "Reverend Insanity" Again!</h3>
         <p>Great news! We're resuming translations for the popular Chinese dark fantasy novel Reverend Insanity! Follow
           the story of Fang Yuan as he schemes and plots his way to the top in a world of gu refinement and cultivation.
-          After a brief hiatus, new chapters are coming! <br>Catch up on the previous chapters: <a href="reverend-insanity.html">Chapter
+          After a brief hiatus, new chapters are coming! <br>Catch up on the previous chapters: <a
+            href="reverend-insanity.html">Chapter
             25</a></p>
 
       </div>
@@ -340,6 +381,59 @@
     <p class="copyright">© 2024 Novel Horizon<br>All right reserved</p>
   </div>
   <!-- footer ends here -->
+
+  <script>
+    document.getElementById('search').addEventListener('input', handleSearch);
+
+    function handleSearch() {
+      const query = document.getElementById('search').value.toLowerCase(); // Get the search query
+      const resultsContainer = document.getElementById('resultsContainer');
+      resultsContainer.innerHTML = ''; // Clear previous results
+
+      const items = document.querySelectorAll('.item'); // Get all items
+      let hasResults = false;
+
+      items.forEach(item => {
+        const title = item.getAttribute('data-title').toLowerCase(); // Get the title from data attribute
+        const imgSrc = item.getAttribute('data-image'); // Get the image source from data attribute
+        const itemLink = item.getAttribute('data-link'); // Get the link from data attribute
+        if (title.includes(query) && query.trim() !== '') {
+          hasResults = true;
+
+          // Create an anchor element for the result
+          const resultLink = document.createElement('a');
+          resultLink.href = itemLink; // Set the link for navigation
+          resultLink.className = 'result-box'; // Add the class for styling
+
+          // Create an image element
+          const img = document.createElement('img');
+          img.src = imgSrc; // Set the source of the image
+          img.className = 'result-image'; // Add a class for styling
+
+          // Create a text node for the title
+          const titleText = document.createTextNode(item.textContent);
+
+          // Append the image and title to the result link
+          resultLink.appendChild(img);
+          resultLink.appendChild(titleText);
+
+          resultsContainer.appendChild(resultLink); // Append to results container
+        }
+      });
+
+      // Show or hide the results container based on whether there are results
+      if (hasResults) {
+        resultsContainer.style.display = 'flex'; // Show the results container
+      } else {
+        resultsContainer.style.display = 'none'; // Hide the results container
+      }
+
+      // If the query is empty, hide the results container
+      if (query.trim() === '') {
+        resultsContainer.style.display = 'none'; // Hide the results container
+      }
+    }
+  </script>
 
 </body>
 
