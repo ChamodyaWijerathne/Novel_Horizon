@@ -7,9 +7,10 @@
   <link rel="icon" type="image/png" href="images/image.png" </head>
 
 <body bgcolor="whitesmoke">
-<div class="main-container">
+
   <!-- *************navbar begins here************************************* -->
 <div class="main-container">
+
   <div id="navbar">
     <div class="navbar_font">
       <a href="homepage.html" class="active">HOME&nbsp;&nbsp;</a>
@@ -97,8 +98,45 @@
   </div>
   <hr class="hr1" />
   <!-- **********************Navabar Ends Here**************** -->
+   <!-- Image Slider -->
+   <div class="slider-container">
+    <div class="slider">
+      <div class="slides">
+        
+        <div class="slide"><a href="The-world-after-the-fall.html">
+          <img src="images/twaf_slide05.png" alt="Image 5" /></a>
+        </div>
+  
+        
+        <div class="slide"><a href="Regressor-Instruction-manual.html">
+          <img src="images/RIM slide01.png" alt="Image 1" /></a>
+        </div>
+        <div class="slide"><a href="little-mushroom.html">
+          <img src="images/LM_slide02.png" alt="Image 2" /></a>
+        </div>
+        <div class="slide"><a href="the-earth-is-online.html">
+          <img src="images/Eio_slide03.png" alt="Image 3" /></a>
+        </div>
+        <div class="slide"><a href="debut-or-die.html">
+          <img src="images/DOD_slide04.png" alt="Image 4" /></a>
+        </div>
+        <div class="slide"><a href="The-world-after-the-fall.html">
+          <img src="images/twaf_slide05.png" alt="Image 5" /></a>
+        </div>
+  
+        
+        <div class="slide"><a href="Regressor-Instruction-manual.html">
+          <img src="images/RIM slide01.png" alt="Image 1" /></a>
+        </div>
+      </div>
+  
+      <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+      <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+  </div>
+  
 
-  <br>
+  <br><br><br>
   <font size="5">
     <center><b>Most Popular</b></center>
   </font>
@@ -467,6 +505,61 @@
         resultsContainer.style.display = 'none';
       }
     }
+
+    // ***************image slide java script*************
+
+    document.addEventListener('DOMContentLoaded', () => {
+    let currentSlide = 1; 
+    const slides = document.querySelectorAll('.slide');
+    const slidesContainer = document.querySelector('.slides');
+    const totalSlides = slides.length;
+    const slideWidth = 100; 
+
+    
+    slidesContainer.style.transform = `translateX(-${currentSlide * slideWidth}%)`;
+
+    function showSlide(index) {
+        slidesContainer.style.transition = 'transform 0.5s ease-in-out';
+        slidesContainer.style.transform = `translateX(-${index * slideWidth}%)`;
+        currentSlide = index;
+
+        
+        slidesContainer.addEventListener('transitionend', () => {
+            if (currentSlide === 0) {
+                slidesContainer.style.transition = 'none';
+                currentSlide = totalSlides - 2; 
+                slidesContainer.style.transform = `translateX(-${currentSlide * slideWidth}%)`;
+            } else if (currentSlide === totalSlides - 1) {
+                slidesContainer.style.transition = 'none';
+                currentSlide = 1; 
+                slidesContainer.style.transform = `translateX(-${currentSlide * slideWidth}%)`;
+            }
+        }, { once: true });
+    }
+
+    function changeSlide(direction) {
+        showSlide(currentSlide + direction);
+    }
+
+   
+    let slideInterval = setInterval(() => {
+        changeSlide(1);
+    }, 3000);
+
+    
+    document.querySelectorAll('.prev, .next').forEach(button => {
+        button.addEventListener('click', () => {
+            clearInterval(slideInterval);
+            changeSlide(button.classList.contains('prev') ? -1 : 1);
+            
+            slideInterval = setInterval(() => {
+                changeSlide(1);
+            }, 3000);
+        });
+    });
+});
+
+
   </script>
 
 </div>
