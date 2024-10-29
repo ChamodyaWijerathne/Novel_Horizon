@@ -253,7 +253,7 @@ a.active {
     color: black;
     padding: 5px;
     
-    border: 2px solid #e9b07a;
+    border: 1px solid #e9b07a;
     border-radius: 10px;
     opacity: 0;
     transition: 1s;
@@ -478,7 +478,7 @@ a.active2 {
     color: black;
     padding: 5px;
     
-    border: 4px solid #e9b07a;
+    border: 1px solid #e9b07a;
     border-radius: 10px;
     opacity: 0;
     transition: 1s;
