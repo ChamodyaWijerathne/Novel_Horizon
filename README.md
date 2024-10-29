@@ -20,7 +20,7 @@
 To run this project locally:
 1.  Clone the repository using `git clone https://github.com/your-username/novel-horizon
 2.  Open the project in your preferred code editor.
-3.  Open homepage.html in your web browser.
+3.  Open index.html in your web browser.
 
 ### Usage
 1.  Click on the "Login" button to create an account or log in if you already
