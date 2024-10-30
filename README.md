@@ -51,6 +51,7 @@ This project was developed with inspiration and reference from various online so
 - **WEBTOON**: https://www.webtoons.com/en/
 - **Novel Updates**: https://www.novelupdates.com/
 - **Chrysanthemum Garden**: https://chrysanthemumgarden.com/
+- **Fandom**: https://www.fandom.com/
 
 Some descriptions and design elements were adapted from these resources to enhance the overall user experience of this platform. While I do not have a comprehensive list of every source, I extend my gratitude to the creators of these resources for their invaluable inspiration.
 
