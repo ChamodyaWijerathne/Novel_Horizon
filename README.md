@@ -30,12 +30,6 @@ To run this project locally:
 4.  Hover on the image to see the title and author.
 5.  Click on the image or the title to view its detals and  read the novel.
 
-
-### Contribution
-
-This project is an individual assignment for university. Please note that this project intended soley for educational purposes and does not seek to profit from the content.
-
-
 ### Copyright Notice
 
 This project is for educational purpose only and will not be published on the internet. **This is not intended for profit or commercial gain**
