@@ -14,6 +14,7 @@
 
 - HTML5
 - CSS3
+- JavaScript
 
 ### Installation
 
@@ -42,3 +43,17 @@ This project is for educational purpose only and will not be published on the in
 The following elements are included:
 - **Titles and Authors**: The names of the novles and their responsive authors are included for informational purposes.
 - **Images**: Any images used are sourced from external creators and are credited approprietely. They are under the assumption of fair use for educational purposes.
+
+### Acknowledgements
+
+This project was developed with inspiration and reference from various online sources. I’d like to acknowledge the following websites for design and content references:
+
+- **WEBTOON**: https://www.webtoons.com/en/
+- **Novel Updates**: https://www.novelupdates.com/
+- **Chrysanthemum Garden**: https://chrysanthemumgarden.com/
+
+Some descriptions and design elements were adapted from these resources to enhance the overall user experience of this platform. While I do not have a comprehensive list of every source, I extend my gratitude to the creators of these resources for their invaluable inspiration.
+
+
+
+
