@@ -101,7 +101,7 @@
   <!-- genres sub-bar  -->
   <div class="genres">
     <a href="drama.html">DRAMA</a>
-    <a href="fantacy.html">FANTACY</a>
+    <a href="fantacy.html">FANTASY</a>
     <a href="romance.html">ROMANCE</a>
     <a href="action.html">ACTION</a>
     <a href="horror.html" class="active2">HORROR</a>
@@ -111,70 +111,68 @@
 
   <div class="image_container">
 
-    <a href="embers-ad-infinitium.html" class="image_link2">
-      <img src="images/Embers-AD-Infinitium.webp" alt="Embers-AD-Infinitium">
+    <a href="embers-ad-infinitium.html" class="image_link">
+      <img src="images/Embers-AD-Infinitium.webp" alt="Embers-AD-Infinitium" data-title="Embers Ad Infinitium">
+      <span class="image_title"></span>
       <span class="hover_text">
-        <font size="5">
-          <center><b>Embers Ad Infinitium</b></center>
-        </font>
-        <br><br>
-        <font size="4"><b>
-            <center>Cuttlefish That Loves Diving</center>
-          </b></font>
+        <font size="4"><b>Embers Ad Infinitium</b></font><br>
+        <font size="2"><b>Cuttlefish That Loves Diving</b></font>
+        <hr>
+        <font size="2">In this latest work by Lord of the Mysteries author, Cuttlefish That Loves Diving, be prepared for a well-thought out and detailed apocalyptic, cyberpunk world with a setting superseding Lord of the Mysteries! Our protagonist, Shang Jianyao, is crazy—literally crazy, at least that’s what the doctors said...</font>
       </span>
     </a>
 
-    <a href="cardRoom.html" class="image_link2">
-      <img src="images/card-room1b.jpg" alt="Card Room">
+    <a href="cardRoom.html" class="image_link">
+      <img src="images/card-room1b.jpg" alt="Card Room" data-title="Card Room">
+      <span class="image_title"></span>
       <span class="hover_text">
-        <font size="5">
-          <center><b>Card Room</b></center>
-        </font>
-        <br><br>
-        <font size="4"><b>
-            <center>Die Zhiling</center>
-          </b></font>
+        <font size="4"><b>Card Room</b></font><br>
+        <font size="2"><b>Die Zhiling</b></font>
+        <hr>
+        <font size="2">Xiao Lou was killed in an accident and reborn in the Card World. Each card here represents a secret room and clearing the instance will give a reward. Xiao Lou draws a card and thinks he could draw all types of equipment and weapons. As a result: Su Shi, Li Bai, Tao Yuanming*… character cards keep coming one after another.</font>
       </span>
     </a>
 
-    <a href="kaleidoscope-of-death.html" class="image_link2">
-      <img src="images/Kaleidoscope-of-Death.jpeg" alt="Kaleidoscope-of-Death">
+    <a href="kaleidoscope-of-death.html" class="image_link">
+      <img src="images/Kaleidoscope-of-Death.jpeg" alt="Kaleidoscope of Death" data-title="Kaleidoscope Of Death" />
+      <span class="image_title"></span>
       <span class="hover_text">
-        <font size="5">
-          <center><b>Kaleidoscope Of Death</b></center>
-        </font>
-        <br><br>
-        <font size="4"><b>
-            <center>Xi Zi-Xun</center>
-          </b></font>
+        <font size="4"><b>Kaleidoscope Of Death</b></font><br>
+        <font size="2"><b>Xi Zixu</b></font>
+        <hr>
+        <font size="2">It started off peculiarly; first, his domestic cat refused to let him cuddle it. Lin Qiushi soon
+          found that a sense of disharmony and incongruity began to pervade everything around him.Then, one odd day, he
+          pushed open a door, and he discovered that the hallway he was familiar with turned into a boundless
+          corridor.Thus the story began.</font>
       </span>
     </a>
 
-    <a href="the-global-examination.html" class="image_link2">
-      <img src="images/Global-Examination.jpg" alt="Global-Examination">
+    <a href="the-global-examination.html" class="image_link">
+      <img src="images/Global-Examination.jpg" alt="Global-Examination" data-title="Global University Entrance Examination">
+      <span class="image_title"></span>
       <span class="hover_text">
-        <font size="5">
-          <center><b>Global University Entrance Examination</b></center>
-        </font>
-        <br><br>
-        <font size="4"><b>
-            <center>Mu SuLi</center>
-          </b></font>
+        <font sizr="4"><b>Global University Entrance Examination</b></font><br>
+        <font size="2"><b>Mu Su Li</b></font>
+        <hr />
+        <font size="2">The whole world is subjected to a highly dangerous standardised exam called the Global Examination. Answering questions by putting their lives at stake, they would live if they passed the test. Every month the exam will undergo reformation while, occasionally, it is random.</font>
       </span>
     </a>
 
-    <a href="the-earth-is-online.html" class="image_link2">
-      <img src="images/eio.jpeg" alt="the-earth-is-online">
+    <a href="the-earth-is-online.html" class="image_link">
+      <img src="images/earth is online.jpeg" alt="earth is online" data-title="The Earth Is Online">
+      <span class="image_title"></span>
       <span class="hover_text">
-        <font size="5">
-          <center><b>The Earth is online</b></center>
-        </font>
-        <br><br>
-        <font size="4"><b>
-            <center>Mo Chen Huan</center>
-          </b></font>
+        <font size="4"><b>The Earth Is Online</b></font>
+        <br />
+        <font size="2"><b>Mo Chen Huan</b></font>
+        <hr />
+        <font size="2">
+          Six months ago, tens of thousands of black phantom towers appeared all over the world, floating above the cities. Chemists, physicists, religious people… all of them could do nothing.
+
+          Six months later, people became used to the towers and no longer paid them attention...</font>
       </span>
     </a>
+    
   </div>
   <br><br>
   <div class="footer"><br>
@@ -244,6 +242,19 @@
           resultsContainer.style.display = 'none';
         }
       }
+
+      document.addEventListener("DOMContentLoaded", function() {
+    const imageLinks = document.querySelectorAll('.image_link');
+
+    imageLinks.forEach(link => {
+        const img = link.querySelector('img');
+        const titleSpan = link.querySelector('.image_title');
+
+        if (titleSpan) {
+            titleSpan.textContent = img.getAttribute('data-title');
+        }
+    });
+});
     </script>
   </div>
 </body>
