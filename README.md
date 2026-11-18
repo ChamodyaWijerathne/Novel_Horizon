@@ -1,12 +1,6 @@
 ## Novel Horizon
 
-**This project is a frontend web application designed as part of my university assignment. It serves as a platform for readers to access translated South-Asian novels. The goal is to create a user-friendly interface that allows users to explore, read, and appreciate literature from diverse South-Asian culture.**
-
----
-<img width="1895" height="863" alt="Screenshot 2025-10-24 150136" src="https://github.com/user-attachments/assets/f117b3fd-0f3f-4f71-aa62-ad30a5305469" />
-<img width="1898" height="878" alt="Screenshot 2025-10-24 150201" src="https://github.com/user-attachments/assets/aab5aa85-dd27-4eb2-826c-daf742fe0e00" />
----
-
+This project is a frontend web application designed as part of my university assignment. It serves as a platform for readers to access translated novels. The goal is to create a user-friendly interface that allows users to explore, read, and appreciate literature from diverse cultures.
 
 ### Features
 
@@ -20,7 +14,18 @@
 - CSS3
 - JavaScript
 
+## Live Demo: 
+[Visit Wenbite](novelhorizon.netlify.app/)
 
+## Screenshots
+
+### Homepage
+![Homepage](https://github.com/user-attachments/assets/f117b3fd-0f3f-4f71-aa62-ad30a5305469)
+
+### Genres
+![Catalog](https://github.com/user-attachments/assets/aab5aa85-dd27-4eb2-826c-daf742fe0e00)
+
+---
 
 ### Usage
 1.  Click on the "Login" button to create an account or log in if you already
