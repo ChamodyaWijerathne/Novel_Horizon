@@ -20,10 +20,13 @@ This project is a frontend web application designed as part of my university ass
 ## Screenshots
 
 ### Homepage
-![Homepage](https://github.com/user-attachments/assets/f117b3fd-0f3f-4f71-aa62-ad30a5305469)
+![Homepage](screenshots/NH_Homepage.png)
 
 ### Genres
-![Catalog](https://github.com/user-attachments/assets/aab5aa85-dd27-4eb2-826c-daf742fe0e00)
+![Catalog](screenshots/NH_Generes.png)
+
+### Book Overview
+![Overview](screenshots/NH_BookOverview.png)
 
 ---
 
